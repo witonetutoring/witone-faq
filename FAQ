@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำถามที่พบบ่อย | WIT ONE Tutoring</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fbfaf6; /* ครีมอ่อน */
+            --primary-color: #142a46; /* น้ำเงินกรมท่า */
+            --accent-gold: #ab9575; /* ทอง/เบจ */
+            --accent-green: #508b2b; /* เขียว */
+        }
+
+        body {
+            font-family: 'Prompt', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom: 5px solid var(--accent-gold);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .faq-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .faq-item {
+            background-color: #ffffff;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--accent-gold);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 18px 20px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+
+        .faq-question:hover {
+            background-color: #f9f9f9;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 20px;
+            color: var(--accent-gold);
+            transition: transform 0.3s;
+        }
+
+        .faq-question.active::after {
+            content: '−';
+            color: var(--accent-green);
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            background-color: #ffffff;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .faq-answer p {
+            margin: 0;
+            padding: 0 20px 18px 20px;
+        }
+
+        .contact-btn {
+            display: block;
+            width: calc(100% - 40px);
+            max-width: 600px;
+            margin: 30px auto;
+            text-align: center;
+            background-color: var(--accent-green);
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(80, 139, 43, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>คำถามที่พบบ่อย (FAQ)</h1>
+        <p>WIT ONE Tutoring แพลตฟอร์มติวออนไลน์</p>
+    </div>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">มีให้ทดลองเรียนฟรีไหม?</div>
+            <div class="faq-answer">
+                <p>ปัจจุบันทางเราไม่มีคลาสทดลองเรียนฟรีค่ะ แต่น้อง ๆ สามารถเลือกซื้อ "แพ็กเกจ 1 ชั่วโมง" เพื่อทดลองเรียนก่อนได้ค่ะ หากถูกใจและสมัครแพ็กเกจ 10 หรือ 20 ชม. เงินค่าเรียน 1 ชั่วโมงแรกจะถูกนำมาหักเป็นส่วนลดออกจากแพ็กเกจเต็มได้เลยค่ะ</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">ชำระเงินตอนไหนและอย่างไร?</div>
+            <div class="faq-answer">
+                <p>เพื่อเป็นการล็อกคิวพี่ติวเตอร์ รบกวนชำระเงินล่วงหน้า (ผ่านบัญชีของ WIT ONE) ก่อนเริ่มเรียนคลาสแรกนะคะ สำหรับค่าเรียนส่วนที่เหลือ สามารถแบ่งชำระเป็นงวดได้ โดยโอนให้พี่ติวเตอร์โดยตรงในทุก ๆ 5 ชั่วโมงค่ะ</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">เรียนผ่านช่องทางไหน?</div>
+            <div class="faq-answer">
+                <p>เป็นการเรียนสดออนไลน์ (Live Online) 100% ผ่านแอปพลิเคชัน Zoom หรือ Google Meet ค่ะ สะดวก ปลอดภัย เรียนได้จากทุกที่</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">เปลี่ยนติวเตอร์ได้ไหม?</div>
+            <div class="faq-answer">
+                <p>เปลี่ยนได้แน่นอนค่ะ! หากเรียนแล้วรู้สึกไม่คลิกกับสไตล์การสอน สามารถแจ้งแอดมินเพื่อขอเปลี่ยนพี่ติวเตอร์ในคลาสถัดไปได้ทันทีโดยไม่มีค่าใช้จ่ายเพิ่มเติมค่ะ</p>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://lin.ee/PXN3EWz" class="contact-btn">💬 ทักแชทปรึกษาแอดมิน / จองเวลาเรียน</a>
+
+    <script>
+        // โค้ด JavaScript สำหรับทำเมนูแบบกดขยาย
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+                const answer = question.nextElementSibling;
+                if (question.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                } else {
+                    answer.style.maxHeight = 0;
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
